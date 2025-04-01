@@ -1,0 +1,3 @@
+@echo off
+echo Starting command prompt with Node.js 11.14.0...
+cmd /k "nvm use 11.14.0 && echo Node version: && node -v && echo. && echo Run 'node Ethereum/simple-deploy.js' to deploy the contract" 

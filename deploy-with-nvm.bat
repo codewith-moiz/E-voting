@@ -1,0 +1,6 @@
+@echo off
+echo Switching to Node.js 11.14...
+call nvm use 11.14
+echo Running deployment script...
+node Ethereum/deploy-sepolia.js
+pause 

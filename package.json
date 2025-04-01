@@ -1,0 +1,64 @@
+{
+  "name": "projecteth",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "@noble/curves": "^0.7.3",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "@zeit/next-css": "^1.0.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "chart.js": "^3.9.1",
+    "chartjs": "^0.3.24",
+    "chartjs-plugin-annotation": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "ganache": "^7.9.1",
+    "ganache-cli": "^6.12.2",
+    "ipfs-http-client": "^33.1.1",
+    "js-cookie": "^3.0.5",
+    "mongoose": "^5.13.20",
+    "next": "^9.5.5",
+    "next-routes": "^1.4.2",
+    "nodemailer": "^6.9.7",
+    "path": "^0.12.7",
+    "react": "^16.14.0",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "solc": "^0.8.21",
+    "web3": "^1.10.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "patch-package": "^8.0.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "dev": "next dev",
+    "frontend": "node frontend.js",
+    "build": "next build",
+    "lint": "next lint",
+    "postinstall": "patch-package",
+    "deploy-contracts": "node Ethereum/deploy.js",
+    "deploy-sepolia": "node Ethereum/deploy-sepolia.js",
+    "update-contract": "node Ethereum/update-contract.js",
+    "setup-blockchain": "npm run deploy-contracts && npm run update-contract"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A blockchain-based E-voting system, created for the final year project of my college, with the help of my Project partners, Sayyam Gada and Charmee Mehta.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehtaAnsh/BlockChainVoting-Private.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mehtaAnsh/BlockChainVoting-Private/issues"
+  },
+  "homepage": "https://github.com/mehtaAnsh/BlockChainVoting-Private#readme"
+}
